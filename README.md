@@ -11,6 +11,7 @@ several brilliant competitors and a comphrehensive comparision between these con
 The students of this course are expected to tweak the solutions untill the loss or accuracy reaches below the threshold set by the tutors.
 * Fourthly the neural network case studies are run on collab.reasearch.google.com as my compute power was not sufficient to train complex
 and deep neural networks. 
+* Finally this repo includes my attempt at adding new solutions and tweaking the existing solutions to better the results.
 
 ### __Organization of the iPynb file content__
 
