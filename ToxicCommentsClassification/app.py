@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 from Model import GeneralModel
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
 @app.after_request
 def after_request(response):
@@ -12,6 +12,10 @@ def after_request(response):
   response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
   return response
 
+@app.route('/')
+def get_index():
+    return app.send_static_file('index.html')
+  
 @app.route('/predict/')
 def get_prediction():
     review = request.args.get('review')
